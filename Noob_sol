@@ -1,0 +1,23 @@
+class Division_intuitively {
+    static int Divide(int D, int E){
+      int R = D;
+      int Q = 0;
+
+      while(R >= E){
+        R = R - E;
+        Q = Q + 1;        
+
+      }
+      
+      return Q;
+    }
+
+    public static void main( String args[] ) {
+      
+      int D = 11;
+      int E = 4;
+      System.out.println("Quotient from our function: " + Divide(D, E));
+      System.out.println("Actual Quotient: " + D/E);
+
+    }
+}
